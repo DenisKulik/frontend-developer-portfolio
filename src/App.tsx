@@ -1,10 +1,10 @@
 import styled from 'styled-components';
+import Header from './components/Header/Header.tsx';
 
 const App = () => {
     return (
         <AppWrapper>
-            Hello, I'm Denis Kulik
-            Frontend developer
+            <Header />
         </AppWrapper>
     );
 };
