@@ -1,5 +1,5 @@
 import { AppWrapper } from './AppStyles.ts';
-import Header from './layout/Header/Header.tsx';
+import Header from './layout/Header';
 
 const App = () => {
     return (

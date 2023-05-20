@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
-const HeaderWrapper = styled.header`
-  height: 8rem;
+export const HeaderWrapper = styled.header`
+  padding: 2rem 0;
 `;
 
-export default HeaderWrapper;
+export const HeaderMenu = styled.div`
+  display: flex;
+  justify-content: flex-end;
+`
