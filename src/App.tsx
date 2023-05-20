@@ -13,6 +13,7 @@ const AppWrapper = styled.div`
   width: 100%;
   min-height: 100vh;
   padding: 2rem;
+  color: white;
   background-color: #0F1624;
 `;
 
