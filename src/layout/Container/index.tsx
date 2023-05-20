@@ -5,7 +5,10 @@ type ContainerPropsType = {
     children: React.ReactNode
 }
 
-const Container = ({ children, ...otherProps }: ContainerPropsType) => {
+const Container: React.FC<ContainerPropsType> = ({
+    children,
+    ...otherProps
+}) => {
     return (
         <ContainerWrapper {...otherProps}>
             {children}
