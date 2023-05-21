@@ -7,4 +7,5 @@ export const HeaderWrapper = styled.header`
 export const HeaderMenu = styled.div`
   display: flex;
   justify-content: flex-end;
+  gap: 3rem;
 `

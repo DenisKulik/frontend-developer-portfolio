@@ -1,6 +1,7 @@
 import { HeaderMenu, HeaderWrapper } from './HeaderStyles.ts';
 import Container from '../Container';
 import NavBar from '../../components/NavBar';
+import SocialLinks from '../../components/SocialLinks';
 
 const Header = () => {
     return (
@@ -8,6 +9,7 @@ const Header = () => {
             <Container>
                 <HeaderMenu>
                     <NavBar />
+                    <SocialLinks />
                 </HeaderMenu>
             </Container>
         </HeaderWrapper>
