@@ -18,7 +18,7 @@ export const HomeInner = styled.div`
 `;
 
 export const AboutMe = styled.div`
-  flex: 1 1 60%;
+  flex: 1 1 65%;
 `;
 
 export const Title = styled.h1`
@@ -35,7 +35,7 @@ export const Description = styled.p`
 `;
 
 export const PhotoWrapper = styled.div`
-  flex: 1 1 40%;
+  flex: 1 1 35%;
 `;
 
 export const MyPhoto = styled.img`
