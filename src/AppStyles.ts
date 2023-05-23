@@ -4,5 +4,5 @@ export const AppWrapper = styled.div`
   min-height: 100vh;
   font-weight: 400;
   color: white;
-  background-color: #121212;
+  background-color: ${props => props.theme.colors.background};
 `;

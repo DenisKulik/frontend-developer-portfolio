@@ -8,7 +8,7 @@ export const NavBarWrapper = styled.nav`
 export const Link = styled.a`
   font-size: 1.8rem;
   text-decoration: none;
-  color: #c8c8f8;
+  color: ${props => props.theme.colors.primaryLight};
   transition: all 0.3s ease-in-out;
 
   &:hover {

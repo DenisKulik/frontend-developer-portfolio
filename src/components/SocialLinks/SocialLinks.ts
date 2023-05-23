@@ -14,7 +14,7 @@ export const IconLink = styled.a`
   svg {
     width: 2rem;
     height: 2rem;
-    fill: #c8c8f8;
+    fill: ${props => props.theme.colors.primaryLight};
     transition: fill 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
 

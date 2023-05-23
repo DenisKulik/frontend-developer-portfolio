@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import banner from '../../assets/banner-bg.png'
+import banner from '../../assets/banner-bg.png';
 
 export const HomeWrapper = styled.section`
   height: 100vh;
@@ -23,11 +23,12 @@ export const AboutMe = styled.div`
 
 export const Title = styled.h1`
   font-size: 5rem;
-  color: #c8c8f8;
+  color: ${props => props.theme.colors.primaryLight};
 `;
 
 export const Subtitle = styled.span`
   font-size: 5rem;
+  color: ${props => props.theme.colors.secondary};
 `;
 
 export const Description = styled.p`
@@ -42,7 +43,8 @@ export const MyPhoto = styled.img`
   max-width: 100%;
   height: auto;
   border-radius: 50%;
-  box-shadow: 0 0 3rem 1rem rgba(58, 33, 49, 0.5);
+  box-shadow: 0 0 3rem 1rem ${props => props.theme.colors.primaryDark.replace(
+          'rgb', 'rgba').replace(')', ', 0.5)')};
 `;
 
 
