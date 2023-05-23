@@ -3,7 +3,9 @@ import banner from '../../assets/banner-bg.png';
 
 export const HomeWrapper = styled.section`
   height: 100vh;
-  padding: 26rem 0 10rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   background: url(${banner}) center center no-repeat;
   background-size: cover;
