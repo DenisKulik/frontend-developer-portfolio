@@ -7,7 +7,7 @@ export const HomeWrapper = styled.section`
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 5rem 0;
+  padding: 15rem 0;
   background: url(${banner}) center center no-repeat;
   background-size: cover;
 `;
@@ -16,12 +16,20 @@ export const HomeInner = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
-  position: relative;
+  gap: 1rem;
+
+  @media ${props => props.theme.media.medium} {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 `;
 
 export const AboutMe = styled.div`
   flex: 1 1 65%;
+
+  @media ${props => props.theme.media.medium} {
+    text-align: center;
+  }
 `;
 
 export const Title = styled.h1`
@@ -40,6 +48,12 @@ export const Description = styled.p`
 
 export const PhotoWrapper = styled.div`
   flex: 1 1 35%;
+
+  @media ${props => props.theme.media.medium} {
+    max-width: 30rem;
+    flex-basis: 100%;
+    order: -1;
+  }
 `;
 
 export const MyPhoto = styled.img`
@@ -49,5 +63,7 @@ export const MyPhoto = styled.img`
   box-shadow: 0 0 3rem 1rem ${props => props.theme.colors.primaryDark.replace(
           'rgb', 'rgba').replace(')', ', 0.5)')};
 `;
+
+
 
 
