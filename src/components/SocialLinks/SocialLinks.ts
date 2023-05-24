@@ -12,9 +12,6 @@ export const IconLink = styled.a`
   justify-content: center;
 
   svg {
-    width: 2rem;
-    height: 2rem;
-    fill: ${props => props.theme.colors.primaryLight};
     transition: fill 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
 
