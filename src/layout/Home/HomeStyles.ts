@@ -7,6 +7,7 @@ export const HomeWrapper = styled.section`
   justify-content: center;
   align-items: center;
   position: relative;
+  padding: 5rem 0;
   background: url(${banner}) center center no-repeat;
   background-size: cover;
 `;

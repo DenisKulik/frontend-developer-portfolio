@@ -5,6 +5,7 @@ export const SkillsWrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5rem 0;
 `;
 
 export const SkillsInner = styled.div`
