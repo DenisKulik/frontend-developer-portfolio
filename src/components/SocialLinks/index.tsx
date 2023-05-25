@@ -13,7 +13,7 @@ const SocialLinks = () => {
             <IconLink href="https://github.com/DenisKulik" target="_blank">
                 <Icon
                     icon={RiGithubFill}
-                    size="2rem"
+                    size="2.5rem"
                     color={theme?.colors.primaryLight}
                 />
             </IconLink>
@@ -23,14 +23,14 @@ const SocialLinks = () => {
             >
                 <Icon
                     icon={RiLinkedinBoxFill}
-                    size="2rem"
+                    size="2.5rem"
                     color={theme?.colors.primaryLight}
                 />
             </IconLink>
             <IconLink href="https://t.me/kulikdp" target="_blank">
                 <Icon
                     icon={RiTelegramFill}
-                    size="2rem"
+                    size="2.5rem"
                     color={theme?.colors.primaryLight}
                 />
             </IconLink>
