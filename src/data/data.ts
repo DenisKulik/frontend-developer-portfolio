@@ -10,11 +10,11 @@ import {
 import { DiCss3Full, DiJavascript1, DiSass } from 'react-icons/di';
 import { BsGit } from 'react-icons/all';
 import todolist from '../assets/todolist.png';
-import socialNetwork from '../assets/social-network.png';
-import reactSneakers from '../assets/react-sneakers.png';
+import socialNetwork from '../assets/social-network.jpg';
+import reactSneakers from '../assets/react-sneakers.jpg';
 import counter from '../assets/counter.png';
-import forkify from '../assets/forkify.png';
-import mapty from '../assets/mapty.png';
+import forkify from '../assets/forkify.jpg';
+import mapty from '../assets/mapty.jpg';
 
 export type SkillType = {
     title: string;
