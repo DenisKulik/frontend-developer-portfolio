@@ -9,11 +9,24 @@ import {
 } from 'react-icons/tb';
 import { DiCss3Full, DiJavascript1, DiSass } from 'react-icons/di';
 import { BsGit } from 'react-icons/all';
+import todolist from '../assets/todolist.png';
+import socialNetwork from '../assets/social-network.png';
+import reactSneakers from '../assets/react-sneakers.png';
+import counter from '../assets/counter.png';
+import forkify from '../assets/forkify.png';
+import mapty from '../assets/mapty.png';
 
 export type SkillType = {
     title: string;
     icon: IconType;
     color: string;
+}
+
+export type ProjectType = {
+    img: string
+    title: string;
+    url: string;
+    technologies: string
 }
 
 export const skills: SkillType[] = [
@@ -96,5 +109,44 @@ export const skills: SkillType[] = [
         title: 'Figma',
         icon: SiFigma,
         color: '#a259ff',
+    },
+];
+
+export const projects: ProjectType[] = [
+    {
+        img: todolist,
+        title: 'Todolist',
+        url: 'https://deniskulik.github.io/todolist',
+        technologies: 'React, Redux, Typescript, Material UI, Styled components',
+    },
+    {
+        img: socialNetwork,
+        title: 'Social Network',
+        url: 'https://deniskulik.github.io/samurai-way',
+        technologies: 'React, Redux, Typescript, React Router, CSS modules',
+    },
+    {
+        img: reactSneakers,
+        title: 'React Sneakers',
+        url: 'https://deniskulik.github.io/react-sneakers',
+        technologies: 'React, React Skeleton, JavaScript,  CSS modules, axios',
+    },
+    {
+        img: counter,
+        title: 'Counter',
+        url: 'https://deniskulik.github.io/counter',
+        technologies: 'React, Redux, Typescript, CSS modules',
+    },
+    {
+        img: forkify,
+        title: 'Forkify',
+        url: 'https://deniskulik.github.io/forkify',
+        technologies: 'JavaScript, MVC, SCSS, HTML',
+    },
+    {
+        img: mapty,
+        title: 'Mapty',
+        url: 'https://deniskulik.github.io/mapty',
+        technologies: 'JavaScript, Leaflet.js, OOP, CSS, HTML',
     },
 ];
