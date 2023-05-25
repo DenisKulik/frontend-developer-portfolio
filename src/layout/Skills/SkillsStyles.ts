@@ -13,4 +13,8 @@ export const SkillsInner = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   gap: 5rem;
+
+  @media ${props => props.theme.media.medium} {
+    gap: 2.5rem;
+  }
 `;
