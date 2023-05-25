@@ -11,7 +11,7 @@ export const theme = {
     media: {
         large: '(max-width: 1200px)',
         medium: '(max-width: 900px)',
-        small: '(max-width: 900px)',
+        small: '(max-width: 600px)',
     }
 };
 
@@ -33,7 +33,15 @@ export const Global = createGlobalStyle`
     font-size: 62.5%; // 1 rem = 10px
 
     @media ${props => props.theme.media.large} {
+      font-size: 56.25%; // 1 rem = 9px
+    }
+
+    @media ${props => props.theme.media.medium} {
       font-size: 50%; // 1 rem = 8px
+    }
+
+    @media ${props => props.theme.media.small} {
+      font-size: 43.75%; // 1 rem = 7px
     }
   }
 `;
