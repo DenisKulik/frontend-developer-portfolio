@@ -39,10 +39,6 @@ export const Global = createGlobalStyle`
     @media ${props => props.theme.media.medium} {
       font-size: 50%; // 1 rem = 8px
     }
-
-    @media ${props => props.theme.media.small} {
-      font-size: 43.75%; // 1 rem = 7px
-    }
   }
 `;
 
