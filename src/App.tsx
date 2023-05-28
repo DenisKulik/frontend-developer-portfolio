@@ -6,6 +6,7 @@ import SkillsContext from './context/SkillsContext.ts';
 import { projects, skills } from './data/data.ts';
 import Projects from './layout/Projects';
 import ProjectsContext from './context/ProjectsContext.ts';
+import Contact from './layout/Contact';
 
 const App = () => {
     return (
@@ -16,6 +17,7 @@ const App = () => {
                     <Home />
                     <Skills />
                     <Projects />
+                    <Contact />
                 </AppWrapper>
             </ProjectsContext.Provider>
         </SkillsContext.Provider>
