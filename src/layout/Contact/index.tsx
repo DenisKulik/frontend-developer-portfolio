@@ -4,6 +4,7 @@ import { ContactInner, ContactWrapper, InfoAboutMe } from './ContactStyles.ts';
 import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi';
 import InfoItem from '../../components/InfoItem';
 import { HiDevicePhoneMobile } from 'react-icons/hi2';
+import Form from '../../components/Form';
 
 const Contact = () => {
     return (
@@ -36,6 +37,7 @@ const Contact = () => {
                             linkText="+79069248512"
                         />
                     </InfoAboutMe>
+                    <Form />
                 </ContactInner>
             </Container>
         </ContactWrapper>

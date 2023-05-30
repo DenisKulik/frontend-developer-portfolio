@@ -1,6 +1,21 @@
 import { createGlobalStyle } from 'styled-components';
 
-export const theme = {
+export type ThemeType = {
+    colors: {
+        primary: string;
+        primaryLight: string;
+        primaryDark: string;
+        secondary: string;
+        background: string;
+    };
+    media: {
+        large: string;
+        medium: string;
+        small: string;
+    };
+}
+
+export const theme: ThemeType = {
     colors: {
         primary: 'rgb(170, 54, 124)',
         primaryLight: 'rgb(223, 157, 200)',

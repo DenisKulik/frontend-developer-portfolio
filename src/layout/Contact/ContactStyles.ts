@@ -13,6 +13,7 @@ export const ContactInner = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap-reverse;
   gap: 2rem;
 `
 
