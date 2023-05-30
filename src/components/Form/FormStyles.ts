@@ -1,8 +1,6 @@
 import styled, { css } from 'styled-components';
 import { DefaultTheme as StyledDefaultTheme } from 'styled-components';
 
-// type InputPropsType = DefaultTheme
-
 export const FormContainer = styled.div``;
 
 export const FormItem = styled.form``;
