@@ -7,6 +7,7 @@ export const FormItem = styled.form``;
 
 const baseInputStyles = (props: StyledDefaultTheme) => css`
   width: 100%;
+  margin-bottom: 1.2rem;
   padding: 1.8rem 2.6rem;
   font-family: inherit;
   font-size: 1.8rem;
@@ -39,7 +40,6 @@ const baseInputStyles = (props: StyledDefaultTheme) => css`
 
 export const Input = styled.input`
   ${props => baseInputStyles(props)}
-  margin-bottom: 1.2rem;
 `;
 
 export const Textarea = styled.textarea`
