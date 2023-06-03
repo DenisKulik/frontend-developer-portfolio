@@ -26,9 +26,26 @@ export const HomeInner = styled.div`
 
 export const AboutMe = styled.div`
   flex: 1 1 65%;
+  animation: moveInLeft 1s ease-out;
 
   @media ${props => props.theme.media.medium} {
     text-align: center;
+  }
+
+  @keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-10rem);
+    }
+
+    80% {
+      transform: translateX(1rem);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 `;
 
@@ -59,6 +76,7 @@ export const Description = styled.p`
 
 export const PhotoWrapper = styled.div`
   flex: 1 1 35%;
+  animation: moveInRight 1s ease-out;
 
   @media ${props => props.theme.media.medium} {
     max-width: 30rem;
@@ -67,6 +85,22 @@ export const PhotoWrapper = styled.div`
 
   @media ${props => props.theme.media.small} {
     max-width: 25rem;
+  }
+
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(10rem);
+    }
+
+    80% {
+      transform: translateX(-1rem);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 `;
 
