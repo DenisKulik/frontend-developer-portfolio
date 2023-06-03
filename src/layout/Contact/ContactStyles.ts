@@ -24,7 +24,6 @@ export const InfoAboutMe = styled.div`
 
   @media ${props => props.theme.media.large} {
     flex-direction: row;
-    flex-wrap: wrap;
   }
 
   @media ${props => props.theme.media.small} {
