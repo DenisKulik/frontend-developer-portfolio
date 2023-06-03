@@ -7,6 +7,7 @@ import { projects, skills } from './data/data.ts';
 import Projects from './layout/Projects';
 import ProjectsContext from './context/ProjectsContext.ts';
 import Contact from './layout/Contact';
+import Footer from './layout/Footer';
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
                     <Skills />
                     <Projects />
                     <Contact />
+                    <Footer />
                 </AppWrapper>
             </ProjectsContext.Provider>
         </SkillsContext.Provider>
