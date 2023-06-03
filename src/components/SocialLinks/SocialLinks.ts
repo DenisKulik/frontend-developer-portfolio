@@ -4,10 +4,6 @@ export const SocialLinksWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
-
-  @media ${props => props.theme.media.medium} {
-    display: none;
-  }
 `;
 
 export const IconLink = styled.a`

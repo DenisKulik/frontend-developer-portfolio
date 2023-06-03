@@ -12,4 +12,10 @@ export const HeaderMenu = styled.div`
   display: flex;
   justify-content: flex-end;
   gap: 3rem;
+
+  @media ${props => props.theme.media.medium} {
+    & div {
+      display: none;
+    }
+  }
 `
