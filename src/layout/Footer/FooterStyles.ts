@@ -5,7 +5,7 @@ export const FooterWrapper = styled.section`
   flex-direction: column;
   align-items: center;
   gap: 1em;
-  padding: 5rem 0;
+  padding: 1rem 0;
 `;
 
 export const Copyright = styled.div`
