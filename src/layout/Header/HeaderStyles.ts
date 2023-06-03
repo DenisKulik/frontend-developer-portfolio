@@ -14,7 +14,7 @@ export const HeaderMenu = styled.div`
   gap: 3rem;
 
   @media ${props => props.theme.media.medium} {
-    & div {
+    & > div {
       display: none;
     }
   }
