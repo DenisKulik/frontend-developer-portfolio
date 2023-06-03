@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const SkillWrapper = styled.div`
-  width: 14rem;
+  width: 12rem;
   display: flex;
   flex-direction: column;
   align-items: center;
