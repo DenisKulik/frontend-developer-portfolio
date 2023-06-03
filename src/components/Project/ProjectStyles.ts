@@ -10,13 +10,41 @@ export const ProjectWrapper = styled.div`
 
 export const ImageWrapper = styled.div`
   flex-basis: 70%;
+  position: relative;
   border-radius: 1rem;
   overflow: hidden;
+
+  &:hover img {
+    filter: blur(3px) brightness(90%);
+    transform: scale(1.1);
+  }
+
+  &:hover a {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
 `;
 
 export const Image = styled.img`
   max-width: 100%;
   height: 100%;
+  transition: all 0.2s ease-in-out;
+`;
+
+export const Link = styled.a`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0.5rem 1rem;
+  opacity: 0;
+  font-size: 1.6rem;
+  color: #1e1e1e;
+  text-decoration: none;
+  text-align: center;
+  background-color: rgba(174, 174, 174, 0.5);
+  border-radius: 1rem;
+  transform: translate(-50%, 20%);
+  transition: all 0.2s ease-in-out;
 `;
 
 export const Title = styled.h4`
