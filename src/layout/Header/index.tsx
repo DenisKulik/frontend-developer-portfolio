@@ -9,7 +9,7 @@ const Header = () => {
             <Container>
                 <HeaderMenu>
                     <NavBar />
-                    <SocialLinks />
+                    <SocialLinks iconSize="2.2rem" />
                 </HeaderMenu>
             </Container>
         </HeaderWrapper>

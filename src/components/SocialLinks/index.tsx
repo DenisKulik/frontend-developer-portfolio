@@ -1,3 +1,4 @@
+import React from 'react';
 import { IconLink, SocialLinksWrapper } from './SocialLinks.ts';
 import { useTheme } from 'styled-components';
 import {
@@ -5,7 +6,11 @@ import {
 } from 'react-icons/ri';
 import Icon from '../Icon';
 
-const SocialLinks = () => {
+type SocialLinksPropsType = {
+    iconSize: string
+}
+
+const SocialLinks: React.FC<SocialLinksPropsType> = ({ iconSize }) => {
     const theme = useTheme();
 
     return (
@@ -13,7 +18,7 @@ const SocialLinks = () => {
             <IconLink href="https://github.com/DenisKulik" target="_blank">
                 <Icon
                     icon={RiGithubFill}
-                    size="2.2rem"
+                    size={iconSize}
                     color={theme?.colors.primaryLight}
                 />
             </IconLink>
@@ -23,14 +28,14 @@ const SocialLinks = () => {
             >
                 <Icon
                     icon={RiLinkedinBoxFill}
-                    size="2.2rem"
+                    size={iconSize}
                     color={theme?.colors.primaryLight}
                 />
             </IconLink>
             <IconLink href="https://t.me/kulikdp" target="_blank">
                 <Icon
                     icon={RiTelegramFill}
-                    size="2.2rem"
+                    size={iconSize}
                     color={theme?.colors.primaryLight}
                 />
             </IconLink>
