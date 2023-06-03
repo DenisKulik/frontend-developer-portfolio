@@ -10,6 +10,6 @@ export const ProjectsWrapper = styled.section`
 
 export const ProjectsInner = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(38rem, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 2.5rem;
 `;
