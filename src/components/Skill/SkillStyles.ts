@@ -6,6 +6,14 @@ export const SkillWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+
+  & > svg {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &:hover svg {
+    transform: scale(1.1);
+  }
 `
 
 export const Title = styled.h3`
