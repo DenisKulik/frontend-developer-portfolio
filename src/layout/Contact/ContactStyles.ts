@@ -21,4 +21,13 @@ export const InfoAboutMe = styled.div`
   flex-direction: column;
   gap: 2rem;
   padding: 1rem;
+
+  @media ${props => props.theme.media.large} {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media ${props => props.theme.media.small} {
+    flex-direction: column;
+  }
 `
