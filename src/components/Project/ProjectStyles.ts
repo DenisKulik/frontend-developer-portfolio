@@ -45,6 +45,11 @@ export const Link = styled.a`
   border-radius: 1rem;
   transform: translate(-50%, 20%);
   transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: ${props => props.theme.colors.primary};
+    background-color: rgba(200, 200, 200, 0.9);
+  }
 `;
 
 export const Title = styled.h4`
