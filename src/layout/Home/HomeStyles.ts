@@ -16,7 +16,7 @@ export const HomeInner = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 
   @media ${props => props.theme.media.medium} {
     flex-direction: column;
@@ -26,7 +26,6 @@ export const HomeInner = styled.div`
 `;
 
 export const AboutMe = styled.div`
-  flex: 1 1 65%;
   animation: moveInLeft 1s ease-out;
 
   @media ${props => props.theme.media.medium} {
@@ -76,16 +75,19 @@ export const Description = styled.p`
 `;
 
 export const PhotoWrapper = styled.div`
-  flex: 1 1 35%;
+  width: 40rem;
+  height: 40rem;
   animation: moveInRight 1s ease-out;
 
   @media ${props => props.theme.media.medium} {
-    max-width: 30rem;
+    width: 35rem;
+    height: 35rem;
     order: -1;
   }
 
   @media ${props => props.theme.media.small} {
-    max-width: 25rem;
+    width: 30rem;
+    height: 30rem;
   }
 
   @keyframes moveInRight {
@@ -106,8 +108,8 @@ export const PhotoWrapper = styled.div`
 `;
 
 export const MyPhoto = styled.img`
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   box-shadow: 0 0 3rem 1rem ${props => props.theme.colors.primaryDark.replace(
           'rgb', 'rgba').replace(')', ', 0.5)')};
