@@ -3,13 +3,13 @@ import styled from 'styled-components';
 export const ProjectWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   gap: 1rem;
   padding: 1rem;
 `;
 
 export const ImageWrapper = styled.div`
-  flex-basis: 70%;
   position: relative;
   border-radius: 1rem;
   overflow: hidden;
