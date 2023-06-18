@@ -9,7 +9,8 @@ export const ProjectsWrapper = styled.section`
 `
 
 export const ProjectsInner = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   gap: 2.5rem;
 `;
