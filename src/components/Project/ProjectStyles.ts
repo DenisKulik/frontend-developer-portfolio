@@ -50,7 +50,7 @@ export const Link = styled.a`
   left: 50%;
   padding: 0.5rem 1.2rem;
   opacity: 0;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #1e1e1e;
   text-decoration: none;
   text-align: center;
@@ -63,17 +63,21 @@ export const Link = styled.a`
     color: ${props => props.theme.colors.primary};
     background-color: rgba(200, 200, 200, 0.9);
   }
+
+  @media ${props => props.theme.media.small} {
+    padding: 1rem 2rem;
+  }
 `;
 
 export const Title = styled.h4`
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 600;
   text-transform: uppercase;
   color: ${props => props.theme.colors.primary};
 `;
 
 export const Description = styled.span`
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.6rem;
+  font-weight: 400;
   text-align: center;
 `;
