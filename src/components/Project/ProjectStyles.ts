@@ -31,6 +31,7 @@ export const ImageWrapper = styled.div`
 
   &:hover div {
     backdrop-filter: blur(3px) brightness(80%);
+    -webkit-backdrop-filter: blur(3px) brightness(80%);
   }
 `;
 
