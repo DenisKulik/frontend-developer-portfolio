@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-    ProjectWrapper, ImageWrapper, Title, Description, Link
+    ProjectWrapper, ImageWrapper, Title, Description, Link, Overlay
 } from './ProjectStyles.ts';
 
 type ProjectPropsType = {
@@ -16,6 +16,7 @@ const Project: React.FC<ProjectPropsType> = (props) => {
     return (
         <ProjectWrapper>
             <ImageWrapper style={{ backgroundImage: `url(${img})` }}>
+                <Overlay />
                 <Link href={url} target="_blank">View</Link>
             </ImageWrapper>
             <Title>{title}</Title>

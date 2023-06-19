@@ -18,33 +18,44 @@ export const ImageWrapper = styled.div`
   margin-bottom: 0.5rem;
   border-radius: 1rem;
   text-align: center;
-  padding: 9rem 1rem;
+  padding-top: 57.75%;
+  overflow: hidden;
   background: top center no-repeat;
   background-size: cover;
   transition: all 0.2s ease-in-out;
 
-  @media ${props => props.theme.media.medium} {
-    padding: 12rem 1rem;
-  }
-
-  @media ${props => props.theme.media.small} {
-    padding: 16rem 1rem;
-  }
-
   &:hover a {
     opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover div {
+    backdrop-filter: blur(3px) brightness(80%);
   }
 `;
 
+export const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+`
+
 export const Link = styled.a`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0.5rem 1.2rem;
   opacity: 0;
-  padding: 0.5rem 1rem;
   font-size: 1.6rem;
   color: #1e1e1e;
   text-decoration: none;
   text-align: center;
-  background-color: rgba(174, 174, 174, 0.5);
+  background-color: rgba(167, 167, 167, 0.5);
   border-radius: 1rem;
+  transform: translate(-50%, 20%);
   transition: all 0.2s ease-in-out;
 
   &:hover {
