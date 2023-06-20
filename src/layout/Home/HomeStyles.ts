@@ -71,7 +71,7 @@ export const Subtitle = styled.span`
 `;
 
 export const Description = styled.p`
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 `;
 
 export const PhotoWrapper = styled.div`
@@ -79,9 +79,12 @@ export const PhotoWrapper = styled.div`
   height: 40rem;
   animation: moveInRight 1s ease-out;
 
-  @media ${props => props.theme.media.medium} {
+  @media ${props => props.theme.media.large} {
     width: 35rem;
     height: 35rem;
+  }
+
+  @media ${props => props.theme.media.medium} {
     order: -1;
   }
 
