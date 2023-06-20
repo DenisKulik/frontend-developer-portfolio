@@ -13,7 +13,7 @@ export const ProjectWrapper = styled.div`
   }
 `;
 
-export const ImageWrapper = styled.div`
+export const ProjectHeader = styled.div`
   position: relative;
   margin-bottom: 0.5rem;
   border-radius: 1rem;
