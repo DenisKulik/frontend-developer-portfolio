@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import {
-    ProjectWrapper, ProjectHeader, Title, Description, Link, Overlay
+    ProjectWrapper, ProjectHeader, Title, Description, Link
 } from './ProjectStyles.ts';
 
 type ProjectPropsType = {
@@ -17,7 +17,6 @@ const Project: FC<ProjectPropsType> = (props) => {
     return (
         <ProjectWrapper>
             <ProjectHeader style={ProjectHeaderStyles}>
-                <Overlay />
                 <Link href={url} target="_blank">View</Link>
             </ProjectHeader>
             <Title>{title}</Title>

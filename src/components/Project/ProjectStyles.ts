@@ -24,25 +24,29 @@ export const ProjectHeader = styled.div`
   background-size: cover;
   transition: all 0.2s ease-in-out;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: none;
+    transition: all 0.2s ease-in-out;
+  }
+
   &:hover a {
     opacity: 1;
     transform: translate(-50%, -50%);
   }
 
-  &:hover div {
-    backdrop-filter: blur(3px) brightness(80%);
-    -webkit-backdrop-filter: blur(3px) brightness(80%);
+  &:hover {
+    &::before {
+      backdrop-filter: blur(3px) brightness(80%);
+      -webkit-backdrop-filter: blur(3px) brightness(80%);
+    }
   }
 `;
-
-export const Overlay = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: all 0.2s ease-in-out;
-`
 
 export const Link = styled.a`
   position: absolute;
@@ -54,6 +58,7 @@ export const Link = styled.a`
   color: #1e1e1e;
   text-decoration: none;
   text-align: center;
+  z-index: 1;
   background-color: rgba(167, 167, 167, 0.5);
   border-radius: 1rem;
   transform: translate(-50%, 20%);
