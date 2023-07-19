@@ -1,16 +1,23 @@
 import styled from 'styled-components';
-import banner from '../../assets/banner-bg.png';
+import Particles from 'react-tsparticles';
 
 export const HomeWrapper = styled.section`
   min-height: 100vh;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 15rem 0;
   overflow: hidden;
-  background: url(${banner}) center center no-repeat;
-  background-size: cover;
 `;
+
+export const CustomedParticles = styled(Particles)`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+`
 
 export const HomeInner = styled.div`
   display: flex;
@@ -27,6 +34,7 @@ export const HomeInner = styled.div`
 
 export const AboutMe = styled.div`
   animation: moveInLeft 1s ease-out;
+  z-index: 10;
 
   @media ${props => props.theme.media.medium} {
     text-align: center;
@@ -77,6 +85,7 @@ export const Description = styled.p`
 export const PhotoWrapper = styled.div`
   width: 40rem;
   height: 40rem;
+  z-index: 10;
   animation: moveInRight 1s ease-out;
 
   @media ${props => props.theme.media.large} {
