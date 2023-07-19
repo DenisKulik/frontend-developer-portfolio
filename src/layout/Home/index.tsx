@@ -15,8 +15,8 @@ const Home = () => {
                         <Title>Hello, I'm Denis Kulik</Title>
                         <Subtitle>Frontend developer</Subtitle>
                         <Description>
-                            I create SPA using React(JS/TS) and
-                            Redux(Redux-toolkit, Redux-thunk)
+                            I create SPA using React (JS/TS) and
+                            Redux (Redux-toolkit)
                         </Description>
                     </AboutMe>
                     <PhotoWrapper>
