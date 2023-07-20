@@ -26,7 +26,12 @@ const Home = () => {
                 <HomeInner>
                     <AboutMe>
                         <Title>Hello, I'm Denis Kulik</Title>
-                        <Subtitle>Frontend developer</Subtitle>
+                        <Subtitle
+                            speed={150}
+                            typingDelay={1000}
+                            eraseDelay={5000}
+                            text={[ 'Frontend developer.' ]}
+                        />
                         <Description>
                             I create SPA using React (JS/TS) and
                             Redux (Redux-toolkit)

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Particles from 'react-tsparticles';
+import ReactTypingEffect from 'react-typing-effect';
 
 export const HomeWrapper = styled.section`
   min-height: 100vh;
@@ -67,7 +68,7 @@ export const Title = styled.h1`
   }
 `;
 
-export const Subtitle = styled.span`
+export const Subtitle = styled(ReactTypingEffect)`
   font-size: 5rem;
   line-height: 1.2;
   margin-bottom: 1rem;
