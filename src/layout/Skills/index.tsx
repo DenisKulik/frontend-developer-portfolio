@@ -1,4 +1,6 @@
 import { useContext } from 'react';
+import { Slide } from 'react-awesome-reveal';
+import { Zoom } from 'react-awesome-reveal';
 import SkillsContext from '../../context/SkillsContext.ts';
 import { SkillsInner, SkillsWrapper } from './SkillsStyles.ts';
 import Container from '../Container';
@@ -21,10 +23,14 @@ const Skills = () => {
     return (
         <SkillsWrapper>
             <Container>
-                <Heading>Skills</Heading>
-                <SkillsInner>
-                    {skillItems}
-                </SkillsInner>
+                <Slide direction="up" duration={1500} triggerOnce={true}>
+                    <Heading>Skills</Heading>
+                    <SkillsInner>
+                        <Zoom duration={200} triggerOnce={true} cascade={true}>
+                            {skillItems}
+                        </Zoom>
+                    </SkillsInner>
+                </Slide>
             </Container>
         </SkillsWrapper>
     );

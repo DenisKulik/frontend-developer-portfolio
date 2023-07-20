@@ -1,7 +1,8 @@
+import { useContext } from 'react';
+import { Slide } from 'react-awesome-reveal';
 import { ProjectsInner, ProjectsWrapper } from './ProjectsStyles.ts';
 import Container from '../Container';
 import Heading from '../../components/Heading';
-import { useContext } from 'react';
 import ProjectsContext from '../../context/ProjectsContext.ts';
 import Project from '../../components/Project';
 
@@ -21,10 +22,12 @@ const Projects = () => {
     return (
         <ProjectsWrapper>
             <Container>
-                <Heading>Projects</Heading>
-                <ProjectsInner>
-                    {projectItems}
-                </ProjectsInner>
+                <Slide direction="up" duration={1500} triggerOnce={true}>
+                    <Heading>Projects</Heading>
+                    <ProjectsInner>
+                        {projectItems}
+                    </ProjectsInner>
+                </Slide>
             </Container>
         </ProjectsWrapper>
     );
