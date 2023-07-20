@@ -17,7 +17,7 @@ const Home = () => {
     }, []);
 
     return (
-        <HomeWrapper>
+        <HomeWrapper id="home">
             <CustomedParticles
                 init={particlesInit}
                 options={particlesOptions}

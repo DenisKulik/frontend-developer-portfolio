@@ -1,12 +1,20 @@
-import { Link, NavBarWrapper } from './NavBarStyles.ts';
+import { CustomedLink, NavBarWrapper } from './NavBarStyles.ts';
 
 const NavBar = () => {
     return (
         <NavBarWrapper>
-            <Link href="">Home</Link>
-            <Link href="">Skills</Link>
-            <Link href="">Projects</Link>
-            <Link href="">Contact</Link>
+            <CustomedLink activeClass="active" to="home" spy={true}>
+                Home
+            </CustomedLink>
+            <CustomedLink activeClass="active" to="skills" spy={true}>
+                Skills
+            </CustomedLink>
+            <CustomedLink activeClass="active" to="projects" spy={true}>
+                Projects
+            </CustomedLink>
+            <CustomedLink activeClass="active" to="contact" spy={true}>
+                Contact
+            </CustomedLink>
         </NavBarWrapper>
     );
 };

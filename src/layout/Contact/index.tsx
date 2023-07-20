@@ -9,7 +9,7 @@ import Form from '../../components/Form';
 
 const Contact = () => {
     return (
-        <ContactWrapper>
+        <ContactWrapper id="contact">
             <Container>
                 <Slide direction="up" duration={1500} triggerOnce={true}>
                     <Heading>Contact</Heading>

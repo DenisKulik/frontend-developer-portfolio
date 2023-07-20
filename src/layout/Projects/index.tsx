@@ -20,7 +20,7 @@ const Projects = () => {
     ));
 
     return (
-        <ProjectsWrapper>
+        <ProjectsWrapper id="projects">
             <Container>
                 <Slide direction="up" duration={1500} triggerOnce={true}>
                     <Heading>Projects</Heading>

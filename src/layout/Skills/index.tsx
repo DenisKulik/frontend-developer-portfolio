@@ -21,7 +21,7 @@ const Skills = () => {
     ));
 
     return (
-        <SkillsWrapper>
+        <SkillsWrapper id="skills">
             <Container>
                 <Slide direction="up" duration={1500} triggerOnce={true}>
                     <Heading>Skills</Heading>
