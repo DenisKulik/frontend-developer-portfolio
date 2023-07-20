@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Particles from 'react-tsparticles';
 import ReactTypingEffect from 'react-typing-effect';
+import { Tilt } from 'react-tilt';
 
 export const HomeWrapper = styled.section`
   min-height: 100vh;
@@ -83,7 +84,7 @@ export const Description = styled.p`
   font-size: 1.8rem;
 `;
 
-export const PhotoWrapper = styled.div`
+export const PhotoWrapper = styled(Tilt)`
   width: 40rem;
   height: 40rem;
   z-index: 10;

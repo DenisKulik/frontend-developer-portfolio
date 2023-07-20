@@ -37,7 +37,7 @@ const Home = () => {
                             Redux (Redux-toolkit)
                         </Description>
                     </AboutMe>
-                    <PhotoWrapper>
+                    <PhotoWrapper options={{ max: 20, scale: 1 }}>
                         <MyPhoto src={photo} alt="Denis-Kulik" />
                     </PhotoWrapper>
                 </HomeInner>
