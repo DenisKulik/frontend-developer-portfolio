@@ -15,19 +15,7 @@ import reactSneakers from '../assets/react-sneakers.jpg';
 import counter from '../assets/counter.png';
 import forkify from '../assets/forkify.jpg';
 import mapty from '../assets/mapty.jpg';
-
-export type SkillType = {
-    title: string;
-    icon: IconType;
-    color: string;
-}
-
-export type ProjectType = {
-    img: string
-    title: string;
-    url: string;
-    technologies: string
-}
+import { ISourceOptions } from 'tsparticles-engine';
 
 export const skills: SkillType[] = [
     {
@@ -150,3 +138,99 @@ export const projects: ProjectType[] = [
         technologies: 'JavaScript, Leaflet.js, OOP, CSS, HTML',
     },
 ];
+
+export const particlesOptions: ISourceOptions = {
+    fullScreen: false,
+    particles: {
+        number: {
+            value: 100,
+            density: {
+                enable: true,
+            },
+        },
+        color: {
+            value: 'rgb(223, 157, 200)',
+        },
+        shape: {
+            type: 'circle',
+        },
+        opacity: {
+            value: {
+                min: 0.1,
+                max: 0.2,
+            },
+            animation: {
+                enable: true,
+                speed: 2,
+                sync: false,
+            },
+        },
+        size: {
+            value: {
+                min: 1,
+                max: 9,
+            },
+            animation: {
+                enable: true,
+                speed: 10,
+                sync: false,
+            },
+        },
+        links: {
+            enable: true,
+            distance: 150,
+            color: 'rgb(170, 54, 124)',
+            opacity: 0.4,
+            width: 1,
+        },
+        move: {
+            enable: true,
+            speed: 2,
+        },
+    },
+    interactivity: {
+        events: {
+            onHover: {
+                enable: true,
+                mode: 'slow',
+                parallax: {
+                    enable: true,
+                    smooth: 10,
+                    force: 50,
+                },
+            },
+            onClick: {
+                enable: true,
+                mode: 'push',
+            },
+        },
+        modes: {
+            grab: {
+                distance: 400,
+                links: {
+                    opacity: 0.8,
+                },
+            },
+            push: {
+                quantity: 4,
+            },
+        },
+    },
+    background: {
+        color: 'rgb(18, 18, 18)',
+    },
+};
+
+// types
+export type SkillType = {
+    title: string;
+    icon: IconType;
+    color: string;
+}
+
+export type ProjectType = {
+    img: string
+    title: string;
+    url: string;
+    technologies: string
+}
