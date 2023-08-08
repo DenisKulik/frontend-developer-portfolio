@@ -1,23 +1,23 @@
-import { useCallback, useContext } from 'react';
-import type { Engine } from 'tsparticles-engine';
-import { loadSlim } from 'tsparticles-slim';
-import ParticlesOptionsContext from '../../context/ParticlesOptionsContext.ts';
+import { useCallback, useContext } from 'react'
+import type { Engine } from 'tsparticles-engine'
+import { loadSlim } from 'tsparticles-slim'
+import ParticlesOptionsContext from '../../context/ParticlesOptionsContext.ts'
 import {
     AboutMe, CustomedParticles, Description, HomeInner,
     HomeWrapper, MyPhoto, PhotoWrapper, Subtitle, Title,
-} from './HomeStyles.ts';
-import photo from '../../assets/my-photo.jpg';
-import Container from '../Container';
+} from './HomeStyles.ts'
+import photo from '../../assets/my-photo.jpg'
+import Container from '../Container'
 
 const Home = () => {
-    const particlesOptions = useContext(ParticlesOptionsContext);
+    const particlesOptions = useContext(ParticlesOptionsContext)
 
     const particlesInit = useCallback(async (engine: Engine) => {
-        await loadSlim(engine);
-    }, []);
+        await loadSlim(engine)
+    }, [])
 
     return (
-        <HomeWrapper id="home">
+        <HomeWrapper>
             <CustomedParticles
                 init={particlesInit}
                 options={particlesOptions}
@@ -37,13 +37,13 @@ const Home = () => {
                             Redux (Redux-toolkit)
                         </Description>
                     </AboutMe>
-                    <PhotoWrapper options={{ max: 20, scale: 1 }}>
+                    <PhotoWrapper>
                         <MyPhoto src={photo} alt="Denis-Kulik" />
                     </PhotoWrapper>
                 </HomeInner>
             </Container>
         </HomeWrapper>
-    );
-};
+    )
+}
 
-export default Home;
+export default Home

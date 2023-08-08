@@ -1,7 +1,6 @@
-import styled from 'styled-components';
-import Particles from 'react-tsparticles';
-import ReactTypingEffect from 'react-typing-effect';
-import { Tilt } from 'react-tilt';
+import styled from 'styled-components'
+import Particles from 'react-tsparticles'
+import ReactTypingEffect from 'react-typing-effect'
 
 export const HomeWrapper = styled.section`
   min-height: 100vh;
@@ -11,7 +10,7 @@ export const HomeWrapper = styled.section`
   align-items: center;
   padding: 15rem 0;
   overflow: hidden;
-`;
+`
 
 export const CustomedParticles = styled(Particles)`
   position: absolute;
@@ -32,7 +31,7 @@ export const HomeInner = styled.div`
     justify-content: center;
     flex-wrap: wrap;
   }
-`;
+`
 
 export const AboutMe = styled.div`
   animation: moveInLeft 1s ease-out;
@@ -57,7 +56,7 @@ export const AboutMe = styled.div`
       transform: translateX(0);
     }
   }
-`;
+`
 
 export const Title = styled.h1`
   font-size: 5rem;
@@ -67,7 +66,7 @@ export const Title = styled.h1`
   @media ${props => props.theme.media.small} {
     font-size: 4rem;
   }
-`;
+`
 
 export const Subtitle = styled(ReactTypingEffect)`
   font-size: 5rem;
@@ -78,13 +77,13 @@ export const Subtitle = styled(ReactTypingEffect)`
   @media ${props => props.theme.media.small} {
     font-size: 4rem;
   }
-`;
+`
 
 export const Description = styled.p`
   font-size: 1.8rem;
-`;
+`
 
-export const PhotoWrapper = styled(Tilt)`
+export const PhotoWrapper = styled.div`
   width: 40rem;
   height: 40rem;
   z-index: 10;
@@ -119,7 +118,7 @@ export const PhotoWrapper = styled(Tilt)`
       transform: translateX(0);
     }
   }
-`;
+`
 
 export const MyPhoto = styled.img`
   width: 100%;
@@ -127,7 +126,7 @@ export const MyPhoto = styled.img`
   border-radius: 50%;
   box-shadow: 0 0 3rem 1rem ${props => props.theme.colors.primaryDark.replace(
           'rgb', 'rgba').replace(')', ', 0.5)')};
-`;
+`
 
 
 
