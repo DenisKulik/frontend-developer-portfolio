@@ -6,6 +6,7 @@ export const ProjectsWrapper = styled.section`
   justify-content: center;
   align-items: center;
   padding: 5rem 0;
+  overflow: hidden;
 `
 
 export const ProjectsInner = styled.div`

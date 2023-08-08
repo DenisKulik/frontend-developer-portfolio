@@ -6,6 +6,7 @@ export const ContactWrapper = styled.section`
   justify-content: center;
   align-items: center;
   padding: 5rem 0;
+  overflow: hidden;
   background: linear-gradient(90deg, ${props => props.theme.colors.primary}, ${props => props.theme.colors.secondary});
 `
 
