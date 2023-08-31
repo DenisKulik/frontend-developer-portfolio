@@ -1,7 +1,7 @@
 import { FormEvent } from 'react'
 
 import { S } from 'components/feedback-form/feedback-form.styles.ts'
-import Button from 'components/Button'
+import { Button } from 'components/button'
 
 export const FeedbackForm = () => {
     const onSubmitHandler = (e: FormEvent<HTMLFormElement>) => e.preventDefault()

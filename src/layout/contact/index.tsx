@@ -2,10 +2,10 @@ import { Slide } from 'react-awesome-reveal'
 import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi'
 import { HiDevicePhoneMobile } from 'react-icons/hi2'
 
-import Container from '../Container'
-import Heading from '../../components/Heading'
+import { Container } from 'components/container'
+import { Heading } from 'components/heading'
 import { S } from 'layout/contact/contact.styles.ts'
-import InfoItem from '../../components/InfoItem'
+import { InfoItem } from 'components/info-item'
 import { FeedbackForm } from 'components/feedback-form'
 
 export const Contact = () => {
