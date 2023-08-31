@@ -1,18 +1,16 @@
-import { useCallback, useContext } from 'react'
+import { useCallback } from 'react'
 import type { Engine } from 'tsparticles-engine'
 import { loadSlim } from 'tsparticles-slim'
-import ParticlesOptionsContext from '../../context/ParticlesOptionsContext.ts'
 import {
     AboutMe, CustomedParticles, Description, HomeInner,
     HomeWrapper, MyPhoto, PhotoWrapper, Subtitle, Title,
 } from './HomeStyles.ts'
 import photo from '../../assets/my-photo.jpg'
 import Container from '../Container'
+import { particlesOptions } from '../../data/data.ts'
 
 const Home = () => {
-    const particlesOptions = useContext(ParticlesOptionsContext)
-
-    const particlesInit = useCallback(async (engine: Engine) => {
+        const particlesInit = useCallback(async (engine: Engine) => {
         await loadSlim(engine)
     }, [])
 

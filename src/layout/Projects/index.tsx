@@ -1,14 +1,11 @@
-import { useContext } from 'react';
 import { Slide } from 'react-awesome-reveal';
 import { ProjectsInner, ProjectsWrapper } from './ProjectsStyles.ts';
 import Container from '../Container';
 import Heading from '../../components/Heading';
-import ProjectsContext from '../../context/ProjectsContext.ts';
 import Project from '../../components/Project';
+import { projects } from '../../data/data.ts'
 
 const Projects = () => {
-    const projects = useContext(ProjectsContext);
-
     const projectItems = projects.map((project, idx) => (
         <Project
             key={idx}
