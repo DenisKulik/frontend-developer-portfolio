@@ -3,7 +3,7 @@ import Header from 'layout/Header'
 import Home from 'layout/Home'
 import Skills from 'layout/Skills'
 import Projects from 'layout/Projects'
-import Contact from 'layout/Contact'
+import { Contact } from 'layout/contact'
 import Footer from 'layout/Footer'
 
 const App = () => {

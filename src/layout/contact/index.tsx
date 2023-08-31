@@ -1,20 +1,21 @@
 import { Slide } from 'react-awesome-reveal'
+import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi'
+import { HiDevicePhoneMobile } from 'react-icons/hi2'
+
 import Container from '../Container'
 import Heading from '../../components/Heading'
-import { ContactInner, ContactWrapper, InfoAboutMe } from './ContactStyles.ts'
-import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi'
+import { S } from 'layout/contact/contact.styles.ts'
 import InfoItem from '../../components/InfoItem'
-import { HiDevicePhoneMobile } from 'react-icons/hi2'
-import Form from '../../components/Form'
+import { FeedbackForm } from 'components/feedback-form'
 
-const Contact = () => {
+export const Contact = () => {
     return (
-        <ContactWrapper id="contact">
+        <S.Contact id="contact">
             <Container>
                 <Slide direction="up" duration={1500} triggerOnce={true}>
                     <Heading>Contact</Heading>
-                    <ContactInner>
-                        <InfoAboutMe>
+                    <S.ContactInner>
+                        <S.InfoAboutMe>
                             <InfoItem
                                 title="Location"
                                 icon={HiOutlineLocationMarker}
@@ -38,13 +39,11 @@ const Contact = () => {
                                 linkType="tel"
                                 linkText="+79069248512"
                             />
-                        </InfoAboutMe>
-                        <Form />
-                    </ContactInner>
+                        </S.InfoAboutMe>
+                        <FeedbackForm />
+                    </S.ContactInner>
                 </Slide>
             </Container>
-        </ContactWrapper>
+        </S.Contact>
     )
 }
-
-export default Contact
