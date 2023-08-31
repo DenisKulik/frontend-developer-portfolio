@@ -1,21 +1,25 @@
-import { IconType } from 'react-icons';
-import { FaReact } from 'react-icons/fa';
+import { IconType } from 'react-icons'
+import { FaReact } from 'react-icons/fa'
 import {
     SiAxios,
-    SiCssmodules, SiFigma, SiJest, SiMui, SiRedux, SiStyledcomponents, SiWebpack
-} from 'react-icons/si';
-import {
-    TbBrandHtml5, TbBrandStorybook, TbBrandTypescript
-} from 'react-icons/tb';
-import { DiCss3Full, DiJavascript1, DiSass } from 'react-icons/di';
-import { BsGit } from 'react-icons/all';
-import todolist from '../assets/todolist.png';
-import socialNetwork from '../assets/social-network.jpg';
-import reactSneakers from '../assets/react-sneakers.jpg';
-import counter from '../assets/counter.png';
-import forkify from '../assets/forkify.jpg';
-import mapty from '../assets/mapty.jpg';
-import { ISourceOptions } from 'tsparticles-engine';
+    SiCssmodules,
+    SiFigma,
+    SiJest,
+    SiMui,
+    SiRedux,
+    SiStyledcomponents,
+    SiWebpack,
+} from 'react-icons/si'
+import { TbBrandHtml5, TbBrandStorybook, TbBrandTypescript } from 'react-icons/tb'
+import { DiCss3Full, DiJavascript1, DiSass } from 'react-icons/di'
+import { BsGit } from 'react-icons/all'
+import todolist from '../assets/todolist.png'
+import socialNetwork from '../assets/social-network.jpg'
+import reactSneakers from '../assets/react-sneakers.jpg'
+import counter from '../assets/counter.png'
+import forkify from '../assets/forkify.jpg'
+import mapty from '../assets/mapty.jpg'
+import { ISourceOptions } from 'tsparticles-engine'
 
 export const skills: SkillType[] = [
     {
@@ -98,7 +102,7 @@ export const skills: SkillType[] = [
         icon: SiFigma,
         color: '#a259ff',
     },
-];
+]
 
 export const projects: ProjectType[] = [
     {
@@ -137,7 +141,7 @@ export const projects: ProjectType[] = [
         url: 'https://deniskulik.github.io/mapty',
         technologies: 'JavaScript, Leaflet.js, OOP, CSS, HTML',
     },
-];
+]
 
 export const particlesOptions: ISourceOptions = {
     fullScreen: false,
@@ -219,18 +223,18 @@ export const particlesOptions: ISourceOptions = {
     background: {
         color: 'rgb(18, 18, 18)',
     },
-};
+}
 
 // types
 export type SkillType = {
-    title: string;
-    icon: IconType;
-    color: string;
+    title: string
+    icon: IconType
+    color: string
 }
 
 export type ProjectType = {
     img: string
-    title: string;
-    url: string;
+    title: string
+    url: string
     technologies: string
 }

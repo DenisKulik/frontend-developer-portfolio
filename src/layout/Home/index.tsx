@@ -2,24 +2,28 @@ import { useCallback } from 'react'
 import type { Engine } from 'tsparticles-engine'
 import { loadSlim } from 'tsparticles-slim'
 import {
-    AboutMe, CustomedParticles, Description, HomeInner,
-    HomeWrapper, MyPhoto, PhotoWrapper, Subtitle, Title,
+    AboutMe,
+    CustomedParticles,
+    Description,
+    HomeInner,
+    HomeWrapper,
+    MyPhoto,
+    PhotoWrapper,
+    Subtitle,
+    Title,
 } from './HomeStyles.ts'
 import photo from '../../assets/my-photo.jpg'
 import Container from '../Container'
-import { particlesOptions } from '../../data/data.ts'
+import { particlesOptions } from 'data/data.ts'
 
 const Home = () => {
-        const particlesInit = useCallback(async (engine: Engine) => {
+    const particlesInit = useCallback(async (engine: Engine) => {
         await loadSlim(engine)
     }, [])
 
     return (
         <HomeWrapper id="home">
-            <CustomedParticles
-                init={particlesInit}
-                options={particlesOptions}
-            />
+            <CustomedParticles init={particlesInit} options={particlesOptions} />
             <Container>
                 <HomeInner>
                     <AboutMe>
@@ -28,11 +32,10 @@ const Home = () => {
                             speed={150}
                             typingDelay={1000}
                             eraseDelay={5000}
-                            text={[ 'Frontend developer.' ]}
+                            text={['Frontend developer.']}
                         />
                         <Description>
-                            I create SPA using React (JS/TS) and
-                            Redux (Redux-toolkit)
+                            I create SPA using React (JS/TS) and Redux (Redux-toolkit)
                         </Description>
                     </AboutMe>
                     <PhotoWrapper>

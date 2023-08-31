@@ -1,11 +1,11 @@
-import { Slide } from 'react-awesome-reveal';
-import Container from '../Container';
-import Heading from '../../components/Heading';
-import { ContactInner, ContactWrapper, InfoAboutMe } from './ContactStyles.ts';
-import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi';
-import InfoItem from '../../components/InfoItem';
-import { HiDevicePhoneMobile } from 'react-icons/hi2';
-import Form from '../../components/Form';
+import { Slide } from 'react-awesome-reveal'
+import Container from '../Container'
+import Heading from '../../components/Heading'
+import { ContactInner, ContactWrapper, InfoAboutMe } from './ContactStyles.ts'
+import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi'
+import InfoItem from '../../components/InfoItem'
+import { HiDevicePhoneMobile } from 'react-icons/hi2'
+import Form from '../../components/Form'
 
 const Contact = () => {
     return (
@@ -44,7 +44,7 @@ const Contact = () => {
                 </Slide>
             </Container>
         </ContactWrapper>
-    );
-};
+    )
+}
 
-export default Contact;
+export default Contact

@@ -1,18 +1,18 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 export type ThemeType = {
     colors: {
-        primary: string;
-        primaryLight: string;
-        primaryDark: string;
-        secondary: string;
-        background: string;
-    };
+        primary: string
+        primaryLight: string
+        primaryDark: string
+        secondary: string
+        background: string
+    }
     media: {
-        large: string;
-        medium: string;
-        small: string;
-    };
+        large: string
+        medium: string
+        small: string
+    }
 }
 
 export const theme: ThemeType = {
@@ -27,8 +27,8 @@ export const theme: ThemeType = {
         large: '(max-width: 1200px)',
         medium: '(max-width: 900px)',
         small: '(max-width: 600px)',
-    }
-};
+    },
+}
 
 export const Global = createGlobalStyle`
   * {
@@ -56,5 +56,4 @@ export const Global = createGlobalStyle`
       font-size: 50%; // 1 rem = 8px
     }
   }
-`;
-
+`

@@ -1,9 +1,9 @@
-import { Slide } from 'react-awesome-reveal';
-import { ProjectsInner, ProjectsWrapper } from './ProjectsStyles.ts';
-import Container from '../Container';
-import Heading from '../../components/Heading';
-import Project from '../../components/Project';
-import { projects } from '../../data/data.ts'
+import { Slide } from 'react-awesome-reveal'
+import { ProjectsInner, ProjectsWrapper } from './ProjectsStyles.ts'
+import Container from '../Container'
+import Heading from '../../components/Heading'
+import Project from '../../components/Project'
+import { projects } from 'data/data.ts'
 
 const Projects = () => {
     const projectItems = projects.map((project, idx) => (
@@ -14,20 +14,18 @@ const Projects = () => {
             url={project.url}
             technologies={project.technologies}
         />
-    ));
+    ))
 
     return (
         <ProjectsWrapper id="projects">
             <Container>
                 <Slide direction="up" duration={1500} triggerOnce={true}>
                     <Heading>Projects</Heading>
-                    <ProjectsInner>
-                        {projectItems}
-                    </ProjectsInner>
+                    <ProjectsInner>{projectItems}</ProjectsInner>
                 </Slide>
             </Container>
         </ProjectsWrapper>
-    );
-};
+    )
+}
 
-export default Projects;
+export default Projects

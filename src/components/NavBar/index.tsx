@@ -1,4 +1,4 @@
-import { CustomedLink, NavBarWrapper } from './NavBarStyles.ts';
+import { CustomedLink, NavBarWrapper } from './NavBarStyles.ts'
 
 const NavBar = () => {
     return (
@@ -16,7 +16,7 @@ const NavBar = () => {
                 Contact
             </CustomedLink>
         </NavBarWrapper>
-    );
-};
+    )
+}
 
-export default NavBar;
+export default NavBar

@@ -1,9 +1,9 @@
-import { FormContainer, FormItem, Input, Textarea } from './FormStyles.ts';
-import Button from '../Button';
-import { FormEvent } from 'react';
+import { FormContainer, FormItem, Input, Textarea } from './FormStyles.ts'
+import Button from '../Button'
+import { FormEvent } from 'react'
 
 const Form = () => {
-    const onSubmitHandler = (e: FormEvent<HTMLFormElement>) => e.preventDefault();
+    const onSubmitHandler = (e: FormEvent<HTMLFormElement>) => e.preventDefault()
 
     return (
         <FormContainer>
@@ -14,7 +14,7 @@ const Form = () => {
                 <Button type="submit">Send</Button>
             </FormItem>
         </FormContainer>
-    );
-};
+    )
+}
 
-export default Form;
+export default Form
