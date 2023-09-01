@@ -21,23 +21,7 @@ const ContactInner = styled.div`
     gap: 2rem;
 `
 
-const InfoAboutMe = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 1rem;
-
-    @media ${props => props.theme.media.large} {
-        flex-direction: row;
-    }
-
-    @media ${props => props.theme.media.small} {
-        flex-direction: column;
-    }
-`
-
 export const S = {
     Contact,
     ContactInner,
-    InfoAboutMe,
 }

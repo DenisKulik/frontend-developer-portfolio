@@ -1,5 +1,17 @@
 import styled from 'styled-components'
 
+const Form = styled.form`
+    min-width: 50rem;
+    width: 100%;
+    flex: 1;
+`
+
+const InputWrapper = styled.div`
+    width: 100%;
+    position: relative;
+    padding-bottom: 1rem;
+`
+
 const Input = styled.input`
     width: 100%;
     margin-bottom: 1.2rem;
@@ -37,7 +49,17 @@ const Textarea = styled.textarea`
     resize: none;
 `
 
+const ErrorMessage = styled.div`
+    position: absolute;
+    bottom: 0;
+    left: 2.6rem;
+    font-size: 1.4rem;
+    color: #ff4949;
+`
 export const S = {
+    Form,
+    InputWrapper,
     Input,
     Textarea,
+    ErrorMessage,
 }
