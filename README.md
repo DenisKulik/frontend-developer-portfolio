@@ -10,4 +10,4 @@ This portfolio project is designed to provide a visually appealing and user-frie
 
 ## Built With
 
-This is a portfolio project built using React, TypeScript, Styled-components, react-awesome-reveal, and react-scroll. It serves as a showcase of my work, skills, and experiences.
+This is a portfolio project built using `React`, `TypeScript`, `Styled-components`, `react-awesome-reveal`, and `react-scroll`. It serves as a showcase of my work, skills, and experiences.
