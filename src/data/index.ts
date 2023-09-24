@@ -14,10 +14,10 @@ import { TbBrandHtml5, TbBrandStorybook, TbBrandTypescript } from 'react-icons/t
 import { DiCss3Full, DiJavascript1, DiSass } from 'react-icons/di'
 import { BsGit } from 'react-icons/all'
 import todolist from '../assets/todolist.png'
-import socialNetwork from '../assets/social-network.jpg'
+import socialNetwork from '../assets/social-network.png'
 import reactSneakers from '../assets/react-sneakers.jpg'
-import counter from '../assets/counter.png'
-import forkify from '../assets/forkify.jpg'
+import gameLanding from '../assets/game-landing.png'
+import flashcards from '../assets/flashcards.png'
 import mapty from '../assets/mapty.jpg'
 import { ISourceOptions } from 'tsparticles-engine'
 
@@ -109,7 +109,13 @@ export const projects: ProjectType[] = [
         img: todolist,
         title: 'Todolist',
         url: 'https://deniskulik.github.io/todolist',
-        technologies: 'React, Redux, Typescript, Material UI, Styled components',
+        technologies: 'React, Redux-toolkit, Typescript, Axios, Jest, Storybook, Material UI',
+    },
+    {
+        img: gameLanding,
+        title: 'Game Landing',
+        url: 'https://deniskulik.github.io/game-landing',
+        technologies: 'React, Typescript, Styled-components, react-alice-carousel, react-scroll',
     },
     {
         img: socialNetwork,
@@ -118,22 +124,16 @@ export const projects: ProjectType[] = [
         technologies: 'React, Redux, Typescript, React Router, CSS modules',
     },
     {
+        img: flashcards,
+        title: 'Flashcards',
+        url: 'https://flashcards-ql9nzpnwb-vitalyabedik.vercel.app',
+        technologies: 'React, React-hook-form, Typescript, Radix UI, Storybook',
+    },
+    {
         img: reactSneakers,
         title: 'React Sneakers',
         url: 'https://deniskulik.github.io/react-sneakers',
         technologies: 'React, React Skeleton, JavaScript,  CSS modules, axios',
-    },
-    {
-        img: counter,
-        title: 'Counter',
-        url: 'https://deniskulik.github.io/counter',
-        technologies: 'React, Redux, Typescript, CSS modules',
-    },
-    {
-        img: forkify,
-        title: 'Forkify',
-        url: 'https://deniskulik.github.io/forkify',
-        technologies: 'JavaScript, MVC, SCSS, HTML',
     },
     {
         img: mapty,
