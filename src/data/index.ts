@@ -1,18 +1,25 @@
 import { IconType } from 'react-icons'
 import { FaReact } from 'react-icons/fa'
+import { RiVuejsLine } from 'react-icons/ri'
 import {
-    SiAxios,
-    SiCssmodules,
     SiFigma,
     SiJest,
     SiMui,
     SiRedux,
     SiStyledcomponents,
+    SiVuetify,
     SiWebpack,
 } from 'react-icons/si'
-import { TbBrandHtml5, TbBrandStorybook, TbBrandTypescript } from 'react-icons/tb'
+import {
+    TbBrandHtml5,
+    TbBrandStorybook,
+    TbBrandTypescript,
+    TbBrandNuxt,
+    TbBrandVite,
+} from 'react-icons/tb'
 import { DiCss3Full, DiJavascript1, DiSass } from 'react-icons/di'
-import { BsGit } from 'react-icons/all'
+import { BiLogoTailwindCss } from 'react-icons/bi'
+import { BsGit } from 'react-icons/bs'
 import todolist from '../assets/todolist.png'
 import socialNetwork from '../assets/social-network.png'
 import reactSneakers from '../assets/react-sneakers.jpg'
@@ -22,6 +29,26 @@ import mapty from '../assets/mapty.jpg'
 import { ISourceOptions } from 'tsparticles-engine'
 
 export const skills: SkillType[] = [
+    {
+        title: 'JavaScript',
+        icon: DiJavascript1,
+        color: '#ffcc33',
+    },
+    {
+        title: 'TypeScript',
+        icon: TbBrandTypescript,
+        color: '#36c',
+    },
+    {
+        title: 'Vue',
+        icon: RiVuejsLine,
+        color: '#41B883',
+    },
+    {
+        title: 'Nuxt',
+        icon: TbBrandNuxt,
+        color: '#00DC82',
+    },
     {
         title: 'React',
         icon: FaReact,
@@ -33,39 +60,34 @@ export const skills: SkillType[] = [
         color: '#764abc',
     },
     {
-        title: 'TypeScript',
-        icon: TbBrandTypescript,
-        color: '#36c',
-    },
-    {
-        title: 'JavaScript',
-        icon: DiJavascript1,
-        color: '#ffcc33',
-    },
-    {
-        title: 'HTML',
+        title: 'Html',
         icon: TbBrandHtml5,
         color: '#c63',
     },
     {
-        title: 'CSS',
+        title: 'Css',
         icon: DiCss3Full,
         color: '#017dc8',
     },
     {
-        title: 'SASS',
+        title: 'Sass',
         icon: DiSass,
         color: '#cc6699',
-    },
-    {
-        title: 'CSS Modules',
-        icon: SiCssmodules,
-        color: '#fff',
     },
     {
         title: 'Styled Components',
         icon: SiStyledcomponents,
         color: '#ffd35b',
+    },
+    {
+        title: 'Vuetify',
+        icon: SiVuetify,
+        color: '#7CC7FF',
+    },
+    {
+        title: 'Tailwind',
+        icon: BiLogoTailwindCss,
+        color: '#38BDF8',
     },
     {
         title: 'Material UI',
@@ -83,14 +105,14 @@ export const skills: SkillType[] = [
         color: '#c53d17',
     },
     {
-        title: 'Axios',
-        icon: SiAxios,
-        color: '#5a29e4',
-    },
-    {
         title: 'Git',
         icon: BsGit,
         color: '#f44c28',
+    },
+    {
+        title: 'Vite',
+        icon: TbBrandVite,
+        color: '#8F6EFE',
     },
     {
         title: 'Webpack',
