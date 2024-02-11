@@ -23,10 +23,10 @@ export const Home = () => {
                             speed={150}
                             typingDelay={1000}
                             eraseDelay={5000}
-                            text={['Frontend developer.']}
+                            text={['Frontend developer']}
                         />
                         <S.Description>
-                            I create SPA using React (JS/TS) and Redux (Redux-toolkit)
+                            I create SPA using JavaScript, TypeScript and Vue/React
                         </S.Description>
                     </S.AboutMe>
                     <S.PhotoWrapper>
