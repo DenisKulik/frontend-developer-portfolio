@@ -5,7 +5,7 @@ export const Footer = () => {
     return (
         <S.Footer>
             <SocialLinks iconSize="4rem" />
-            <S.Copyright>© 2023 all right reserved</S.Copyright>
+            <S.Copyright>© 2024 all right reserved</S.Copyright>
         </S.Footer>
     )
 }
