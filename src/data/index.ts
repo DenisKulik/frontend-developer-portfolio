@@ -106,40 +106,40 @@ export const skills: SkillType[] = [
 
 export const projects: ProjectType[] = [
     {
+        img: flashcards,
+        title: 'Flashcards',
+        url: 'https://flashcards-learning.vercel.app/',
+        technologies: 'Typescript, React, RTK Query, Radix UI, Storybook',
+    },
+    {
         img: todolist,
         title: 'Todolist',
         url: 'https://deniskulik.github.io/todolist',
-        technologies: 'React, Redux-toolkit, Typescript, Axios, Jest, Storybook, Material UI',
-    },
-    {
-        img: gameLanding,
-        title: 'Game Landing',
-        url: 'https://deniskulik.github.io/game-landing',
-        technologies: 'React, Typescript, Styled-components, react-alice-carousel, react-scroll',
+        technologies: 'Typescript, React, Redux-toolkit, Axios, Jest, Material UI, Storybook',
     },
     {
         img: socialNetwork,
         title: 'Social Network',
         url: 'https://deniskulik.github.io/samurai-way',
-        technologies: 'React, Redux, Typescript, React Router, CSS modules',
+        technologies: 'Typescript, React, Redux, React Router, Jest, CSS modules',
     },
     {
-        img: flashcards,
-        title: 'Flashcards',
-        url: 'https://flashcards-ql9nzpnwb-vitalyabedik.vercel.app',
-        technologies: 'React, React-hook-form, Typescript, Radix UI, Storybook',
+        img: gameLanding,
+        title: 'Game Landing',
+        url: 'https://deniskulik.github.io/game-landing',
+        technologies: 'Typescript, React, Styled-components',
     },
     {
         img: reactSneakers,
         title: 'React Sneakers',
         url: 'https://deniskulik.github.io/react-sneakers',
-        technologies: 'React, React Skeleton, JavaScript,  CSS modules, axios',
+        technologies: 'JavaScript, React, CSS modules, axios',
     },
     {
         img: mapty,
         title: 'Mapty',
         url: 'https://deniskulik.github.io/mapty',
-        technologies: 'JavaScript, Leaflet.js, OOP, CSS, HTML',
+        technologies: 'JavaScript, Leaflet.js, CSS, HTML',
     },
 ]
 
