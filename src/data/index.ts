@@ -1,15 +1,7 @@
 import { IconType } from 'react-icons'
 import { FaReact } from 'react-icons/fa'
 import { RiVuejsLine } from 'react-icons/ri'
-import {
-    SiFigma,
-    SiJest,
-    SiMui,
-    SiRedux,
-    SiStyledcomponents,
-    SiVuetify,
-    SiWebpack,
-} from 'react-icons/si'
+import { SiFigma, SiJest, SiRedux, SiStyledcomponents, SiWebpack } from 'react-icons/si'
 import {
     TbBrandHtml5,
     TbBrandStorybook,
@@ -25,7 +17,7 @@ import socialNetwork from '../assets/social-network.png'
 import reactSneakers from '../assets/react-sneakers.jpg'
 import gameLanding from '../assets/game-landing.png'
 import flashcards from '../assets/flashcards.png'
-import mapty from '../assets/mapty.jpg'
+import crmSystem from '../assets/crm-system.png'
 import { ISourceOptions } from 'tsparticles-engine'
 
 export const skills: SkillType[] = [
@@ -80,19 +72,9 @@ export const skills: SkillType[] = [
         color: '#ffd35b',
     },
     {
-        title: 'Vuetify',
-        icon: SiVuetify,
-        color: '#7CC7FF',
-    },
-    {
         title: 'Tailwind',
         icon: BiLogoTailwindCss,
         color: '#38BDF8',
-    },
-    {
-        title: 'Material UI',
-        icon: SiMui,
-        color: '#0081cb',
     },
     {
         title: 'Storybook',
@@ -146,6 +128,12 @@ export const projects: ProjectType[] = [
         technologies: 'Typescript, React, Redux, React Router, Jest, CSS modules',
     },
     {
+        img: crmSystem,
+        title: 'Crm System',
+        url: 'https://deniskulik.github.io/crm-system',
+        technologies: 'JavaScript, Vue 2, Vuex, Firebase, ChartJS, Jest, Materialize CSS',
+    },
+    {
         img: gameLanding,
         title: 'Game Landing',
         url: 'https://deniskulik.github.io/game-landing',
@@ -156,12 +144,6 @@ export const projects: ProjectType[] = [
         title: 'React Sneakers',
         url: 'https://deniskulik.github.io/react-sneakers',
         technologies: 'JavaScript, React, CSS modules, axios',
-    },
-    {
-        img: mapty,
-        title: 'Mapty',
-        url: 'https://deniskulik.github.io/mapty',
-        technologies: 'JavaScript, Leaflet.js, CSS, HTML',
     },
 ]
 
