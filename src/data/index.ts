@@ -14,7 +14,7 @@ import { BiLogoTailwindCss } from 'react-icons/bi'
 import { BsGit } from 'react-icons/bs'
 import todolist from '../assets/todolist.png'
 import socialNetwork from '../assets/social-network.png'
-import reactSneakers from '../assets/react-sneakers.jpg'
+import vueSneakers from '../assets/vue-sneakers.png'
 import gameLanding from '../assets/game-landing.png'
 import flashcards from '../assets/flashcards.png'
 import crmSystem from '../assets/crm-system.png'
@@ -72,7 +72,7 @@ export const skills: SkillType[] = [
         color: '#ffd35b',
     },
     {
-        title: 'Tailwind',
+        title: 'TailwindCSS',
         icon: BiLogoTailwindCss,
         color: '#38BDF8',
     },
@@ -113,37 +113,37 @@ export const projects: ProjectType[] = [
         img: flashcards,
         title: 'Flashcards',
         url: 'https://flashcards-learning.vercel.app/',
-        technologies: 'Typescript, React, RTK Query, Radix UI, Storybook',
+        technologies: 'Typescript, React, RTK Query, Radix UI, Storybook, Vite',
     },
     {
         img: todolist,
         title: 'Todolist',
         url: 'https://deniskulik.github.io/todolist',
-        technologies: 'Typescript, React, Redux-toolkit, Axios, Jest, Material UI, Storybook',
+        technologies: 'Typescript, React, Redux-toolkit, Axios, Jest, Material UI, Storybook, CRA',
     },
     {
         img: socialNetwork,
         title: 'Social Network',
         url: 'https://deniskulik.github.io/samurai-way',
-        technologies: 'Typescript, React, Redux, React Router, Jest, CSS modules',
+        technologies: 'Typescript, React, Redux, React Router, Jest, CSS modules, CRA',
     },
     {
         img: crmSystem,
         title: 'Crm System',
         url: 'https://deniskulik.github.io/crm-system',
-        technologies: 'JavaScript, Vue 2, Vuex, Firebase, ChartJS, Jest, Materialize CSS',
+        technologies: 'JavaScript, Vue 2, Vuex, Firebase, ChartJS, Jest, Materialize CSS, Vue CLI',
+    },
+    {
+        img: vueSneakers,
+        title: 'Vue Sneakers',
+        url: 'https://deniskulik.github.io/vue-sneakers',
+        technologies: 'JavaScript, Vue 3, Vue Router, Pinia, axios, TailwindCSS, Vite',
     },
     {
         img: gameLanding,
         title: 'Game Landing',
         url: 'https://deniskulik.github.io/game-landing',
-        technologies: 'Typescript, React, Styled-components',
-    },
-    {
-        img: reactSneakers,
-        title: 'React Sneakers',
-        url: 'https://deniskulik.github.io/react-sneakers',
-        technologies: 'JavaScript, React, CSS modules, axios',
+        technologies: 'Typescript, React, Styled-components, Vite',
     },
 ]
 
