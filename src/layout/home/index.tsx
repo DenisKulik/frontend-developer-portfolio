@@ -8,32 +8,33 @@ import { Container } from 'components/container'
 import { particlesOptions } from 'data'
 
 export const Home = () => {
-    const particlesInit = useCallback(async (engine: Engine) => {
-        await loadSlim(engine)
-    }, [])
+  const particlesInit = useCallback(async (engine: Engine) => {
+    await loadSlim(engine)
+  }, [])
 
-    return (
-        <S.Home id="home">
-            <S.StyledParticles init={particlesInit} options={particlesOptions} />
-            <Container>
-                <S.HomeInner>
-                    <S.AboutMe>
-                        <S.Title>Hello, I'm Denis Kulik</S.Title>
-                        <S.Subtitle
-                            speed={150}
-                            typingDelay={1000}
-                            eraseDelay={5000}
-                            text={['Frontend developer']}
-                        />
-                        <S.Description>
-                            I create SPA using JavaScript, TypeScript and Vue/React
-                        </S.Description>
-                    </S.AboutMe>
-                    <S.PhotoWrapper>
-                        <S.MyPhoto src={photo} alt="Denis-Kulik" />
-                    </S.PhotoWrapper>
-                </S.HomeInner>
-            </Container>
-        </S.Home>
-    )
+  return (
+    <S.Home id="home">
+      <S.StyledParticles init={particlesInit} options={particlesOptions} />
+      <Container>
+        <S.HomeInner>
+          <S.AboutMe>
+            <S.Title>Hello, I'm Denis Kulik</S.Title>
+            <S.Subtitle
+              speed={150}
+              typingDelay={1000}
+              eraseDelay={5000}
+              text={['Frontend developer']}
+            />
+            <S.Description>
+              I have 1+ years of commercial experience in frontend development using TypeScript, Vue
+              and Nuxt
+            </S.Description>
+          </S.AboutMe>
+          <S.PhotoWrapper>
+            <S.MyPhoto src={photo} alt="Denis-Kulik" />
+          </S.PhotoWrapper>
+        </S.HomeInner>
+      </Container>
+    </S.Home>
+  )
 }

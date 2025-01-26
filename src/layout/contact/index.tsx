@@ -7,17 +7,17 @@ import { FeedbackForm } from 'components/feedback-form'
 import { ContactInfo } from 'components/contact-info'
 
 export const Contact = () => {
-    return (
-        <S.Contact id="contact">
-            <Container>
-                <Slide direction="up" duration={1500} triggerOnce={true}>
-                    <Heading>Contact</Heading>
-                    <S.ContactInner>
-                        <ContactInfo />
-                        <FeedbackForm />
-                    </S.ContactInner>
-                </Slide>
-            </Container>
-        </S.Contact>
-    )
+  return (
+    <S.Contact id="contact">
+      <Container>
+        <Slide direction="up" duration={1500} triggerOnce={true}>
+          <Heading>Contact</Heading>
+          <S.ContactInner>
+            <ContactInfo />
+            <FeedbackForm />
+          </S.ContactInner>
+        </Slide>
+      </Container>
+    </S.Contact>
+  )
 }

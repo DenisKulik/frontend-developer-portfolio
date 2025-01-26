@@ -1,33 +1,33 @@
 import { createGlobalStyle } from 'styled-components'
 
 export type ThemeType = {
-    colors: {
-        primary: string
-        primaryLight: string
-        primaryDark: string
-        secondary: string
-        background: string
-    }
-    media: {
-        large: string
-        medium: string
-        small: string
-    }
+  colors: {
+    primary: string
+    primaryLight: string
+    primaryDark: string
+    secondary: string
+    background: string
+  }
+  media: {
+    large: string
+    medium: string
+    small: string
+  }
 }
 
 export const theme: ThemeType = {
-    colors: {
-        primary: 'rgb(170, 54, 124)',
-        primaryLight: 'rgb(223, 157, 200)',
-        primaryDark: 'rgb(58, 33, 49)',
-        secondary: 'rgb(74, 47, 189)',
-        background: 'rgb(18, 18, 18)',
-    },
-    media: {
-        large: '(max-width: 1200px)',
-        medium: '(max-width: 900px)',
-        small: '(max-width: 600px)',
-    },
+  colors: {
+    primary: 'rgb(170, 54, 124)',
+    primaryLight: 'rgb(223, 157, 200)',
+    primaryDark: 'rgb(58, 33, 49)',
+    secondary: 'rgb(74, 47, 189)',
+    background: 'rgb(18, 18, 18)',
+  },
+  media: {
+    large: '(max-width: 1200px)',
+    medium: '(max-width: 900px)',
+    small: '(max-width: 600px)',
+  },
 }
 
 export const Global = createGlobalStyle`

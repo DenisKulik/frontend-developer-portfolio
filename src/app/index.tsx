@@ -1,3 +1,5 @@
+import 'react-toastify/dist/ReactToastify.css'
+import { ToastContainer } from 'react-toastify'
 import { AppWrapper } from 'app/app.styles.ts'
 import { Header } from 'layout/header'
 import { Home } from 'layout/home'
@@ -7,14 +9,17 @@ import { Contact } from 'layout/contact'
 import { Footer } from 'layout/footer'
 
 export const App = () => {
-    return (
-        <AppWrapper>
-            <Header />
-            <Home />
-            <Skills />
-            <Projects />
-            <Contact />
-            <Footer />
-        </AppWrapper>
-    )
+  return (
+    <>
+      <ToastContainer position="bottom-right" autoClose={3000} />
+      <AppWrapper>
+        <Header />
+        <Home />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+      </AppWrapper>
+    </>
+  )
 }
